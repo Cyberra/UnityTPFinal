@@ -4,29 +4,42 @@ using System.Collections;
 public class Player : MonoBehaviour {
 
 	private Rigidbody2D myBody;
-	private float playerSpeed = 1.0f;
-	private const float playerMaxSpeed = 5.0f;
-	private bool isMoving;
+
+	public float playerSpeed;
+	public float jumpPower; 
+
+	private bool isJumping;
 
 
-	// Use this for initialization
 	void Start () {
+		// Get the body of Kirby
 		myBody = GetComponent<Rigidbody2D> ();
 	}
-	
-	// Update is called once per frame
-	void Update () {
+
+	void FixedUpdate () {
 		myControls ();
 	}
 
+	// Controls used by the player.
 	void myControls() {
-		Debug.Log (Input.GetAxis("Horizontal"));
+		if (Input.GetKey(KeyCode.D)){
+			transform.Translate(Vector3.right * Input.GetAxis("Horizontal") * playerSpeed * Time.deltaTime);
+			// Check for AddForce with david.
+		}
 
-		if (Input.GetKey("d")){
+		if (Input.GetKey(KeyCode.A)) {
 			transform.Translate(Vector3.right * Input.GetAxis("Horizontal") * playerSpeed * Time.deltaTime);
 		}
-		if (Input.GetKey("a")) {
-			transform.Translate(Vector3.right * Input.GetAxis("Horizontal") * playerSpeed * Time.deltaTime);
+
+		if (Input.GetKeyDown (KeyCode.Space) && isJumping == false) {
+			myBody.AddForce(Vector2.up * jumpPower, ForceMode2D.Impulse);
 		}
+		// Set boolean so the player can't jump while in the air.
+		isJumping = true;
+	}
+
+	// On any collision detection, the player can't jump.
+	void OnCollisionStay2D(Collision2D coll) {
+		isJumping = false;
 	}
 }
