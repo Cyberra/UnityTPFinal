@@ -24,11 +24,11 @@ public class FollowCamera : MonoBehaviour {
 		}
 
 		if (player.isJumping) {
-			// TODO LERP // temp transform
-			Debug.Log("ASSET STORE");
-		} 
+            transform.position = Vector3.Lerp(new Vector3(player.transform.position.x, transform.position.y, transform.position.z), new Vector3(player.transform.position.x, player.transform.position.y, transform.position.z), Time.fixedDeltaTime);
+		}
+
 		if (!player.isJumping) {
-			transform.position = player.transform.position + cameraOffSet;
+            transform.position = Vector3.Lerp(new Vector3(player.transform.position.x, transform.position.y, transform.position.z), new Vector3(player.transform.position.x, player.transform.position.y, transform.position.z), Time.fixedDeltaTime);
 		}
 	}
 }
