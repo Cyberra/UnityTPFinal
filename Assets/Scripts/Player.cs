@@ -39,66 +39,86 @@ public class Player : MonoBehaviour
     // Animations used for the player.
     void myAnimations(float dt)
     {
-        idleSpacingTime += dt;
+        // Hold the player on the desired rotation.
+        myBody.transform.localRotation = new Quaternion(0, 0, 0, 0);
 
+        // Timer to delay the idle state.
+        idleSpacingTime += dt;
         if (idleSpacingTime >= 3f)
         {
             idleSpacingTime = 0;
             myAnim.SetFloat("IdleSpacing", 0);
         }
-
-        // Timer to delay the idle state.
         myAnim.SetFloat("IdleSpacing", idleSpacingTime);
 
         
-
+        // Play the correct animation depending on the playing condition.
+        // animChoice represents the variable inside the state machine for the animation inside Unity.
         if (myBody.velocity.y >= 0.1f && isJumping == true)
         {
+            // JumpStart
             animChoice = 2;
         }
         else if (myBody.velocity.y <= 0.1f && myBody.velocity.y >= -0.1f && isJumping == true)
         {
+            // JumpPeak
             animChoice = 4;
         }
         else if (myBody.velocity.y < -0.1f && isJumping == true)
         {
+            // JumpFall
             animChoice = 5;
+            // Update the landing variable so the player can fall infinitely until he touches the ground.
             isLanding = true;
         }
         else if (isLanding == true && isJumping == false)
         {
+            // JumpLand
             animChoice = 6;
+            // Reset my variable.
             isLanding = false;
         }
         else if (isJumping == false)
         {
-            if (myBody.velocity.x > 0.1f)
+            // Move to the right.
+            if (myBody.velocity.x > 0.1f && animChoice != 1)
             {
                 animChoice = 1;
                 myBody.transform.localScale = new Vector3(1, 1, 1);
             }
+            // Check if the player is running.
+            else if (myBody.velocity.x > 0.5f && animChoice == 1)
+            {
+                animChoice = 3;
+            }
             
-            if (myBody.velocity.x < -0.1f)
+            // Move to the left.
+            if (myBody.velocity.x < -0.1f && animChoice != 1)
             {
                 animChoice = 1;
                 myBody.transform.localScale = new Vector3(-1, 1, 1);
             }
+            // Check if the player is running.
+            else if (myBody.velocity.x < -0.5f && animChoice == 1)
+            {
+                animChoice = 3;
+            }
 
-            if (myBody.velocity.x < 0.1f && myBody.velocity.x > -0.1f)
+            // Idle state.
+            if (myBody.velocity.x < 0.5f && myBody.velocity.x > -0.5f)
             {
                 animChoice = 0;
             }
         }
 
+        // Set my animation for the state machine.
         myAnim.SetInteger("Choice", animChoice);
-
-        //Debug.Log(myBody.velocity.x);
-        Debug.Log(animChoice);
     }
 
 	// Controls used by the player.
 	void myControls() 
     {
+        // Move right
 		if (Input.GetKey (KeyCode.D) && myBody.velocity.x <= 2.0f)
         {
             if (myBody.velocity.x <= 0)
@@ -109,16 +129,17 @@ public class Player : MonoBehaviour
             myBody.velocity = new Vector3(playerSpeed, myBody.velocity.y, 0);
 		}
 
+        // Move left
 		if (Input.GetKey (KeyCode.A) && myBody.velocity.x >= -2.0f) 
         {
             if (myBody.velocity.x >= 0)
             {
                 myBody.velocity = new Vector2(myBody.velocity.x, myBody.velocity.y);
             }
-            //myBody.AddForce(new Vector2(-playerSpeed, 0), ForceMode2D.Force);
             myBody.velocity = new Vector3(-playerSpeed, myBody.velocity.y, 0);
 		}
 
+        // Jump
 		if (Input.GetKey (KeyCode.Space) && isJumping == false) 
         {
 			isJumping = true;
