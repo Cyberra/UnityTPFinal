@@ -1,0 +1,2332 @@
+fileFormatVersion: 2
+guid: 0187dd1613246db41a72958dd55f384e
+timeCreated: 1436376768
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: AnimationSpriteSheet_0
+    21300002: AnimationSpriteSheet_1
+    21300004: AnimationSpriteSheet_2
+    21300006: AnimationSpriteSheet_3
+    21300008: AnimationSpriteSheet_4
+    21300010: AnimationSpriteSheet_5
+    21300012: AnimationSpriteSheet_6
+    21300014: AnimationSpriteSheet_7
+    21300016: AnimationSpriteSheet_8
+    21300018: AnimationSpriteSheet_9
+    21300020: AnimationSpriteSheet_10
+    21300022: AnimationSpriteSheet_11
+    21300024: AnimationSpriteSheet_12
+    21300026: AnimationSpriteSheet_13
+    21300028: AnimationSpriteSheet_14
+    21300030: AnimationSpriteSheet_15
+    21300032: AnimationSpriteSheet_16
+    21300034: AnimationSpriteSheet_17
+    21300036: AnimationSpriteSheet_18
+    21300038: AnimationSpriteSheet_19
+    21300040: AnimationSpriteSheet_20
+    21300042: AnimationSpriteSheet_21
+    21300044: AnimationSpriteSheet_22
+    21300046: AnimationSpriteSheet_23
+    21300048: AnimationSpriteSheet_24
+    21300050: AnimationSpriteSheet_25
+    21300052: AnimationSpriteSheet_26
+    21300054: AnimationSpriteSheet_27
+    21300056: AnimationSpriteSheet_28
+    21300058: AnimationSpriteSheet_29
+    21300060: AnimationSpriteSheet_30
+    21300062: AnimationSpriteSheet_31
+    21300064: AnimationSpriteSheet_32
+    21300066: AnimationSpriteSheet_33
+    21300068: AnimationSpriteSheet_34
+    21300070: AnimationSpriteSheet_35
+    21300072: AnimationSpriteSheet_36
+    21300074: AnimationSpriteSheet_37
+    21300076: AnimationSpriteSheet_38
+    21300078: AnimationSpriteSheet_39
+    21300080: AnimationSpriteSheet_40
+    21300082: AnimationSpriteSheet_41
+    21300084: AnimationSpriteSheet_42
+    21300086: AnimationSpriteSheet_43
+    21300088: AnimationSpriteSheet_44
+    21300090: AnimationSpriteSheet_45
+    21300092: AnimationSpriteSheet_46
+    21300094: AnimationSpriteSheet_47
+    21300096: AnimationSpriteSheet_48
+    21300098: AnimationSpriteSheet_49
+    21300100: AnimationSpriteSheet_50
+    21300102: AnimationSpriteSheet_51
+    21300104: AnimationSpriteSheet_52
+    21300106: AnimationSpriteSheet_53
+    21300108: AnimationSpriteSheet_54
+    21300110: AnimationSpriteSheet_55
+    21300112: AnimationSpriteSheet_56
+    21300114: AnimationSpriteSheet_57
+    21300116: AnimationSpriteSheet_58
+    21300118: AnimationSpriteSheet_59
+    21300120: AnimationSpriteSheet_60
+    21300122: AnimationSpriteSheet_61
+    21300124: AnimationSpriteSheet_62
+    21300126: AnimationSpriteSheet_63
+    21300128: AnimationSpriteSheet_64
+    21300130: AnimationSpriteSheet_65
+    21300132: AnimationSpriteSheet_66
+    21300134: AnimationSpriteSheet_67
+    21300136: AnimationSpriteSheet_68
+    21300138: AnimationSpriteSheet_69
+    21300140: AnimationSpriteSheet_70
+    21300142: AnimationSpriteSheet_71
+    21300144: AnimationSpriteSheet_72
+    21300146: AnimationSpriteSheet_73
+    21300148: AnimationSpriteSheet_74
+    21300150: AnimationSpriteSheet_75
+    21300152: AnimationSpriteSheet_76
+    21300154: AnimationSpriteSheet_77
+    21300156: AnimationSpriteSheet_78
+    21300158: AnimationSpriteSheet_79
+    21300160: AnimationSpriteSheet_80
+    21300162: AnimationSpriteSheet_81
+    21300164: AnimationSpriteSheet_82
+    21300166: AnimationSpriteSheet_83
+    21300168: AnimationSpriteSheet_84
+    21300170: AnimationSpriteSheet_85
+    21300172: AnimationSpriteSheet_86
+    21300174: AnimationSpriteSheet_87
+    21300176: AnimationSpriteSheet_88
+    21300178: AnimationSpriteSheet_89
+    21300180: AnimationSpriteSheet_90
+    21300182: AnimationSpriteSheet_91
+    21300184: AnimationSpriteSheet_92
+    21300186: AnimationSpriteSheet_93
+    21300188: AnimationSpriteSheet_94
+    21300190: AnimationSpriteSheet_95
+    21300192: AnimationSpriteSheet_96
+    21300194: AnimationSpriteSheet_97
+    21300196: AnimationSpriteSheet_98
+    21300198: AnimationSpriteSheet_99
+    21300200: AnimationSpriteSheet_100
+    21300202: AnimationSpriteSheet_101
+    21300204: AnimationSpriteSheet_102
+    21300206: AnimationSpriteSheet_103
+    21300208: AnimationSpriteSheet_104
+    21300210: AnimationSpriteSheet_105
+    21300212: AnimationSpriteSheet_106
+    21300214: AnimationSpriteSheet_107
+    21300216: AnimationSpriteSheet_108
+    21300218: AnimationSpriteSheet_109
+    21300220: AnimationSpriteSheet_110
+    21300222: AnimationSpriteSheet_111
+    21300224: AnimationSpriteSheet_112
+    21300226: AnimationSpriteSheet_113
+    21300228: AnimationSpriteSheet_114
+    21300230: AnimationSpriteSheet_115
+    21300232: AnimationSpriteSheet_116
+    21300234: AnimationSpriteSheet_117
+    21300236: AnimationSpriteSheet_118
+    21300238: AnimationSpriteSheet_119
+    21300240: AnimationSpriteSheet_120
+    21300242: AnimationSpriteSheet_121
+    21300244: AnimationSpriteSheet_122
+    21300246: AnimationSpriteSheet_123
+    21300248: AnimationSpriteSheet_124
+    21300250: AnimationSpriteSheet_125
+    21300252: AnimationSpriteSheet_126
+    21300254: AnimationSpriteSheet_127
+    21300256: AnimationSpriteSheet_128
+    21300258: AnimationSpriteSheet_129
+    21300260: AnimationSpriteSheet_130
+    21300262: AnimationSpriteSheet_131
+    21300264: AnimationSpriteSheet_132
+    21300266: AnimationSpriteSheet_133
+    21300268: AnimationSpriteSheet_134
+    21300270: AnimationSpriteSheet_135
+    21300272: AnimationSpriteSheet_136
+    21300274: AnimationSpriteSheet_137
+    21300276: AnimationSpriteSheet_138
+    21300278: AnimationSpriteSheet_139
+    21300280: AnimationSpriteSheet_140
+    21300282: AnimationSpriteSheet_141
+    21300284: AnimationSpriteSheet_142
+    21300286: AnimationSpriteSheet_143
+    21300288: AnimationSpriteSheet_144
+    21300290: AnimationSpriteSheet_145
+    21300292: AnimationSpriteSheet_146
+    21300294: AnimationSpriteSheet_147
+    21300296: AnimationSpriteSheet_148
+    21300298: AnimationSpriteSheet_149
+    21300300: AnimationSpriteSheet_150
+    21300302: AnimationSpriteSheet_151
+    21300304: AnimationSpriteSheet_152
+    21300306: AnimationSpriteSheet_153
+    21300308: AnimationSpriteSheet_154
+    21300310: AnimationSpriteSheet_155
+    21300312: AnimationSpriteSheet_156
+    21300314: AnimationSpriteSheet_157
+    21300316: AnimationSpriteSheet_158
+    21300318: AnimationSpriteSheet_159
+    21300320: AnimationSpriteSheet_160
+    21300322: AnimationSpriteSheet_161
+    21300324: AnimationSpriteSheet_162
+    21300326: AnimationSpriteSheet_163
+    21300328: AnimationSpriteSheet_164
+    21300330: AnimationSpriteSheet_165
+    21300332: AnimationSpriteSheet_166
+    21300334: AnimationSpriteSheet_167
+    21300336: AnimationSpriteSheet_168
+    21300338: AnimationSpriteSheet_169
+    21300340: AnimationSpriteSheet_170
+    21300342: AnimationSpriteSheet_171
+    21300344: AnimationSpriteSheet_172
+    21300346: AnimationSpriteSheet_173
+    21300348: AnimationSpriteSheet_174
+    21300350: AnimationSpriteSheet_175
+    21300352: AnimationSpriteSheet_176
+    21300354: AnimationSpriteSheet_177
+    21300356: AnimationSpriteSheet_178
+    21300358: AnimationSpriteSheet_179
+    21300360: AnimationSpriteSheet_180
+    21300362: AnimationSpriteSheet_181
+    21300364: AnimationSpriteSheet_182
+    21300366: AnimationSpriteSheet_183
+    21300368: AnimationSpriteSheet_184
+    21300370: AnimationSpriteSheet_185
+    21300372: AnimationSpriteSheet_186
+    21300374: AnimationSpriteSheet_187
+    21300376: AnimationSpriteSheet_188
+    21300378: AnimationSpriteSheet_189
+    21300380: AnimationSpriteSheet_190
+    21300382: AnimationSpriteSheet_191
+    21300384: AnimationSpriteSheet_192
+    21300386: AnimationSpriteSheet_193
+    21300388: AnimationSpriteSheet_194
+    21300390: AnimationSpriteSheet_195
+    21300392: AnimationSpriteSheet_196
+    21300394: AnimationSpriteSheet_197
+    21300396: AnimationSpriteSheet_198
+    21300398: AnimationSpriteSheet_199
+    21300400: AnimationSpriteSheet_200
+    21300402: AnimationSpriteSheet_201
+    21300404: AnimationSpriteSheet_202
+    21300406: AnimationSpriteSheet_203
+    21300408: AnimationSpriteSheet_204
+    21300410: AnimationSpriteSheet_205
+    21300412: AnimationSpriteSheet_206
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: AnimationSpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 814
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 814
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 814
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 784
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 784
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 784
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 784
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 784
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 784
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 784
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 755
+        width: 26
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 755
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 755
+        width: 23
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 755
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 755
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 755
+        width: 26
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 755
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 755
+        width: 23
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 755
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 755
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 725
+        width: 30
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 725
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 725
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 725
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_24
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 725
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_25
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 725
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_26
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 725
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_27
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 725
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_28
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 724
+        width: 43
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_29
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 693
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_30
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 694
+        width: 27
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_31
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 696
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_32
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 695
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_33
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 695
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_34
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 696
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_35
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 696
+        width: 26
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_36
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 693
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_37
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 693
+        width: 27
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_38
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 695
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_39
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 694
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_40
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 693
+        width: 26
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_41
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 660
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_42
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 660
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_43
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 660
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_44
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 632
+        width: 34
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_45
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 632
+        width: 27
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_46
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 630
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_47
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 631
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_48
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 631
+        width: 30
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_49
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 631
+        width: 31
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_50
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 631
+        width: 28
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_51
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 631
+        width: 29
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_52
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 631
+        width: 30
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_53
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 632
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_54
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 632
+        width: 26
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_55
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 632
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_56
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 632
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_57
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 632
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_58
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 632
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_59
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 632
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_60
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 632
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_61
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 632
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_62
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 632
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_63
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 604
+        width: 27
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_64
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 603
+        width: 27
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_65
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 604
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_66
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 604
+        width: 28
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_67
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 604
+        width: 29
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_68
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 603
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_69
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 603
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_70
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 603
+        width: 26
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_71
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 603
+        width: 27
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_72
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 603
+        width: 29
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_73
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 603
+        width: 25
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_74
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 603
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_75
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 603
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_76
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 572
+        width: 27
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_77
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 572
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_78
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 572
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_79
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 572
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_80
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 572
+        width: 24
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_81
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 572
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_82
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 573
+        width: 27
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_83
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 543
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_84
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 543
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_85
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 543
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_86
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 543
+        width: 26
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_87
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 543
+        width: 28
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_88
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 540
+        width: 29
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_89
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 543
+        width: 30
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_90
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 543
+        width: 32
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_91
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 561
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_92
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 543
+        width: 27
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_93
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 543
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_94
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 543
+        width: 27
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_95
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 543
+        width: 27
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_96
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 511
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_97
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 511
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_98
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 511
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_99
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 511
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_100
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 511
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_101
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 511
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_102
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 473
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_103
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 473
+        width: 24
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_104
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 473
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_105
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 473
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_106
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 473
+        width: 29
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_107
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 473
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_108
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 432
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_109
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 432
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_110
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 432
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_111
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 432
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_112
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 424
+        width: 41
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_113
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 432
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_114
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 432
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_115
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 432
+        width: 29
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_116
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 432
+        width: 28
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_117
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 432
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_118
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 432
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_119
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 389
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_120
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 389
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_121
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 389
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_122
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 389
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_123
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 389
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_124
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 389
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_125
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 389
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_126
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 389
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_127
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 389
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_128
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 389
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_129
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 402
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_130
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 402
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_131
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 402
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_132
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 346
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_133
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 346
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_134
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 346
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_135
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 344
+        width: 41
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_136
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 346
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_137
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 346
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_138
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 346
+        width: 30
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_139
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 346
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_140
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 346
+        width: 27
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_141
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 346
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_142
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 369
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_143
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 369
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_144
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 346
+        width: 29
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_145
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 346
+        width: 25
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_146
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 346
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_147
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 346
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_148
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 335
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_149
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 314
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_150
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 314
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_151
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 314
+        width: 29
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_152
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 314
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_153
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 314
+        width: 30
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_154
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 314
+        width: 30
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_155
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 308
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_156
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 308
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_157
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 301
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_158
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 301
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_159
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 301
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_160
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 274
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_161
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 274
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_162
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 274
+        width: 27
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_163
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 274
+        width: 27
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_164
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 274
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_165
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 274
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_166
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 274
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_167
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 274
+        width: 30
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_168
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 274
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_169
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 239
+        width: 27
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_170
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 239
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_171
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 239
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_172
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 239
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_173
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 239
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_174
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 239
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_175
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 239
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_176
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 239
+        width: 26
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_177
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 205
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_178
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 205
+        width: 25
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_179
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 205
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_180
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 205
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_181
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 205
+        width: 26
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_182
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 205
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_183
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 205
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_184
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 205
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_185
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 205
+        width: 25
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_186
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 205
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_187
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 205
+        width: 20
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_188
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 172
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_189
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 172
+        width: 25
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_190
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 172
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_191
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 172
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_192
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 172
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_193
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 172
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_194
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 172
+        width: 27
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_195
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 172
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_196
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 172
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_197
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 137
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_198
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 138
+        width: 31
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_199
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 139
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_200
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 138
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_201
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 139
+        width: 31
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_202
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 138
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_203
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 139
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_204
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 141
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_205
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 139
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AnimationSpriteSheet_206
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 140
+        width: 31
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
