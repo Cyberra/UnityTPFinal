@@ -10,11 +10,11 @@ public class Grid : MonoBehaviour
 	private float distanceX;
 	private float distanceY;
 	public float squareSize;
+    
+    public GameObject[,] grid = new GameObject[100, 100];
 
-    private GameObject[,] grid = new GameObject[100, 100];
 
-
-	void Awake () 
+	void Awake ()
     {
 		for (int i = 0; i < width; ++i) 
         {
