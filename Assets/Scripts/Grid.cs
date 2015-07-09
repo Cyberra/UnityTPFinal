@@ -1,8 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Grid : MonoBehaviour {
-
+public class Grid : MonoBehaviour 
+{
+    public Camera cam;
 	public GameObject plane;
 	public int width;
 	public int height;
@@ -10,14 +11,17 @@ public class Grid : MonoBehaviour {
 	private float distanceY;
 	public float squareSize;
 
-	private GameObject [,] grid = new GameObject[10, 10];
+    private GameObject[,] grid = new GameObject[100, 100];
 
 
-	void Awake () {
-		for (int i = 0; i < width; ++i) {
+	void Awake () 
+    {
+		for (int i = 0; i < width; ++i) 
+        {
 			distanceX += squareSize;
 			distanceY = 0;
-			for (int j = 0; j < height; ++j){
+			for (int j = 0; j < height; ++j)
+            {
 				distanceY += squareSize;
 				GameObject gridPlane = (GameObject)Instantiate(plane);
 				gridPlane.transform.position = new Vector3(gridPlane.transform.position.x + distanceX, gridPlane.transform.position.y + distanceY);
@@ -27,12 +31,22 @@ public class Grid : MonoBehaviour {
 	}
 	
 	// Use this for initialization
-	void Start () {
-
+	void Start () 
+    {
+        cam.GetComponent<Camera>();
 	}
 
 	// Update is called once per frame
-	void Update () {
-	
+	void Update () 
+    {
+        if (Input.GetMouseButtonDown(0))
+        { // if left button pressed...
+            
+        }
 	}
+
+    void OnMouseDown()
+    {
+        Debug.Log("OH");
+    }
 }
