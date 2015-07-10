@@ -29,12 +29,12 @@ public class FollowCamera : MonoBehaviour
 
 		if (player.isJumping) 
         {
-            transform.position = Vector3.Lerp(new Vector3(player.transform.position.x, transform.position.y, transform.position.z), new Vector3(player.transform.position.x, player.transform.position.y, transform.position.z), Time.fixedDeltaTime);
+            transform.position = Vector3.Lerp(new Vector3(player.transform.position.x, transform.position.y, transform.position.z), new Vector3(player.transform.position.x, player.transform.position.y, transform.position.z), 0.3f);
 		}
 
 		if (!player.isJumping) 
         {
-            transform.position = Vector3.Lerp(new Vector3(player.transform.position.x, transform.position.y, transform.position.z), new Vector3(player.transform.position.x, player.transform.position.y, transform.position.z), Time.fixedDeltaTime);
+            transform.position = Vector3.Lerp(new Vector3(player.transform.position.x, transform.position.y, transform.position.z), new Vector3(player.transform.position.x, player.transform.position.y, transform.position.z), 0.3f);
 		}
 	}
 }
