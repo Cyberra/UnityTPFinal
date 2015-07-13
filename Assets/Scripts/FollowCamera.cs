@@ -7,12 +7,11 @@ public class FollowCamera : MonoBehaviour
 	public Player player;
 
 	public float cameraHeight;
-	private Vector3 cameraOffSet = new Vector3(0, 10, 0);
 
 	// Use this for initialization
 	void Start () 
     {
-		cameraOffSet = transform.position - player.transform.position;
+		
 	}
 	
 	// Update is called once per frame

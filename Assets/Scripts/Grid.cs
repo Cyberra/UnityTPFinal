@@ -3,15 +3,14 @@ using System.Collections;
 
 public class Grid : MonoBehaviour 
 {
-    public Camera cam;
-	public GameObject plane;
+    public Tile plane;
 	public int width;
 	public int height;
 	private float distanceX;
 	private float distanceY;
 	public float squareSize;
-    
-    public GameObject[,] grid = new GameObject[100, 100];
+
+    public Tile[,] grid = new Tile[100, 100];
 
 
 	void Awake ()
@@ -23,9 +22,10 @@ public class Grid : MonoBehaviour
 			for (int j = 0; j < height; ++j)
             {
 				distanceY += squareSize;
-				GameObject gridPlane = (GameObject)Instantiate(plane);
+                Tile gridPlane = (Tile)Instantiate(plane);
 				gridPlane.transform.position = new Vector3(gridPlane.transform.position.x + distanceX, gridPlane.transform.position.y + distanceY);
 				grid[i, j] = gridPlane;
+                gridPlane.gameObject.name = "Tile" + i + "-" + j;
 			}
 		}
 	}
@@ -33,20 +33,12 @@ public class Grid : MonoBehaviour
 	// Use this for initialization
 	void Start () 
     {
-        cam.GetComponent<Camera>();
+        
 	}
 
 	// Update is called once per frame
 	void Update () 
     {
-        if (Input.GetMouseButtonDown(0))
-        { // if left button pressed...
-            
-        }
+        
 	}
-
-    void OnMouseDown()
-    {
-        Debug.Log("OH");
-    }
 }
