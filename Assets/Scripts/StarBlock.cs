@@ -3,21 +3,21 @@ using System.Collections;
 
 public class StarBlock : MonoBehaviour 
 {
-
-	// Use this for initialization
-	void Start () 
-    {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () 
-    {
-	
-	}
+    public delegate void StarBlockDestroyed(StarBlock sb);
+    public event StarBlockDestroyed Destroyed;
     
     void OnMouseDown()
     {
-        
+        // Event for Tiles.
+        Destroy(gameObject);
+    }
+
+    void OnDestroy()
+    {
+        // Verify is has not been destroyed yet.
+        if (Destroyed != null)
+        {
+            Destroyed(this);
+        }
     }
 }

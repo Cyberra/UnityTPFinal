@@ -19,6 +19,7 @@ public class Player : MonoBehaviour
     // Animation variables.
     private int animChoice = 0;
     private float idleSpacingTime = 0;
+    private float rollReset = 0;
 
 	void Start () 
     {
@@ -44,13 +45,18 @@ public class Player : MonoBehaviour
 
         // Timer to delay the idle state.
         idleSpacingTime += dt;
+        rollReset += dt;
         if (idleSpacingTime >= 3f)
         {
             idleSpacingTime = 0;
             myAnim.SetFloat("IdleSpacing", 0);
         }
+        if (rollReset >= 1.0f)
+        {
+            rollReset = 0;
+        }
         myAnim.SetFloat("IdleSpacing", idleSpacingTime);
-
+        myAnim.SetFloat("RollReset", rollReset);
         
         // Play the correct animation depending on the playing condition.
         // animChoice represents the variable inside the state machine for the animation inside Unity.
@@ -62,7 +68,13 @@ public class Player : MonoBehaviour
         else if (myBody.velocity.y <= 0.1f && myBody.velocity.y >= -0.1f && isJumping == true)
         {
             // JumpPeak
+            rollReset = 0;
             animChoice = 4;
+            // Can't roll infinitely if you jump at the exact same height of the jump power.
+            if (rollReset >= 0.8f)
+            {
+                animChoice = 0;
+            }
         }
         else if (myBody.velocity.y < -0.1f && isJumping == true)
         {
@@ -125,8 +137,8 @@ public class Player : MonoBehaviour
             {
                 myBody.velocity = new Vector2(myBody.velocity.x, myBody.velocity.y);
             }
-			//myBody.AddForce(new Vector2(playerSpeed, 0), ForceMode2D.Force);
-            myBody.velocity = new Vector3(playerSpeed, myBody.velocity.y, 0);
+			myBody.AddForce(new Vector2(playerSpeed, 0), ForceMode2D.Force);
+            //myBody.velocity = new Vector3(playerSpeed, myBody.velocity.y, 0);
 		}
 
         // Move left
@@ -136,7 +148,8 @@ public class Player : MonoBehaviour
             {
                 myBody.velocity = new Vector2(myBody.velocity.x, myBody.velocity.y);
             }
-            myBody.velocity = new Vector3(-playerSpeed, myBody.velocity.y, 0);
+            myBody.AddForce(new Vector2(-playerSpeed, 0), ForceMode2D.Force);
+            //myBody.velocity = new Vector3(-playerSpeed, myBody.velocity.y, 0);
 		}
 
         // Jump

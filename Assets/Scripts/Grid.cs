@@ -13,7 +13,7 @@ public class Grid : MonoBehaviour
     public Tile[,] grid = new Tile[100, 100];
 
 
-	void Awake ()
+	void Awake()
     {
 		for (int i = 0; i < width; ++i) 
         {
@@ -28,17 +28,5 @@ public class Grid : MonoBehaviour
                 gridPlane.gameObject.name = "Tile" + i + "-" + j;
 			}
 		}
-	}
-	
-	// Use this for initialization
-	void Start () 
-    {
-        
-	}
-
-	// Update is called once per frame
-	void Update () 
-    {
-        
 	}
 }
