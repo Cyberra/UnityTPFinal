@@ -1,10 +1,21 @@
 fileFormatVersion: 2
 guid: 6cd07f5e2d423814b996ac0aad6dc978
-timeCreated: 1436406357
-licenseType: Free
+timeCreated: 1436881423
+licenseType: Pro
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - aTransform: {instanceID: 0}
+  - sbPrefab: {instanceID: 0}
+  - switchPrefab: {instanceID: 0}
+  - doorPrefab: {instanceID: 0}
+  - endDoorPrefab: {instanceID: 0}
+  - platformPrefab: {instanceID: 0}
+  - wall1Prefab: {instanceID: 0}
+  - wall2Prefab: {instanceID: 0}
+  - wall3Prefab: {instanceID: 0}
+  - stonePlatform1Prefab: {instanceID: 0}
+  - stonePlatform2Prefab: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

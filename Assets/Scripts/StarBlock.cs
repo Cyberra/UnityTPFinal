@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class StarBlock : MonoBehaviour 
+public class StarBlock : Actor 
 {
     public delegate void StarBlockDestroyed(StarBlock sb);
     public event StarBlockDestroyed Destroyed;

@@ -2,7 +2,7 @@
 using System.Timers;
 using System.Collections;
 
-public class Player : MonoBehaviour 
+public class Player : Actor 
 {
     // My references in my components.
     public Animator myAnim;
@@ -13,6 +13,7 @@ public class Player : MonoBehaviour
 	public float jumpPower;
 
     // Keep public to communicate through scripts.
+    [HideInInspector]
 	public bool isJumping;
     private bool isLanding = false;
 
