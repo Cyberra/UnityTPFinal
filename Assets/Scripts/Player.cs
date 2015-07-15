@@ -5,7 +5,9 @@ using System.Collections;
 public class Player : Actor 
 {
     // My references in my components.
+    [HideInInspector]
     public Animator myAnim;
+    [HideInInspector]
 	public Rigidbody2D myBody;
 
     // Adjust the player movement.

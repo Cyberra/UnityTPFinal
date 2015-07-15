@@ -66,12 +66,6 @@ public class Tile : Actor
     // EndDoor
     private string endDoor = "Tile81-5";
 
-    // Reference my objects.
-    void Awake()
-    {
-
-    }
-
 	// Need to use 'Start' in order to place the objects.
     void Start()
     {
@@ -272,7 +266,7 @@ public class Tile : Actor
             isStarblock = true;
         }
 
-        if (name == switch1)
+        if (name == switch1 && doorInstance1 != null)
         {
             doorInstance1.transform.position = new Vector3(0, 0, 0);
         }
