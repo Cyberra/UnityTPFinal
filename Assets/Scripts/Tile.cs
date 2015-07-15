@@ -266,6 +266,8 @@ public class Tile : Actor
             isStarblock = true;
         }
 
+        
+        Debug.Log(name);
         if (name == switch1 && doorInstance1 != null)
         {
             doorInstance1.transform.position = new Vector3(0, 0, 0);
