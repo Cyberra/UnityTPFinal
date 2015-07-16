@@ -9,7 +9,7 @@ public class Tile : Actor
     // Assign my Prefabs inside Unity.
     public StarBlock sbPrefab;
     public GameObject switchPrefab;
-    public Door doorPrefab;
+    public GameObject doorPrefab;
     public EndDoor endDoorPrefab;
     public GameObject platformPrefab;
     public GameObject wall1Prefab;
@@ -19,11 +19,6 @@ public class Tile : Actor
     public GameObject stonePlatform2Prefab;
 
     private bool isStarblock = false;
-
-    Door doorInstance1;
-    Door doorInstance2;
-    Door doorInstance3;
-    Door doorInstance4;
 
     // Doors
     private string door1 = "Tile20-9";
@@ -53,6 +48,7 @@ public class Tile : Actor
     private string switch4 = "Tile74-6";
     private string switch5 = "Tile75-6";
 
+
     // Walls
     private string wall1 = "Tile20-14";
     private string wall2 = "Tile40-13";
@@ -63,6 +59,9 @@ public class Tile : Actor
     private string stonePlatform1 = "Tile55-13";
     private string stonePlatform2 = "Tile72-13";
 
+    // Bridge
+    private string stoneBridge = "Tile65-13";
+
     // EndDoor
     private string endDoor = "Tile81-5";
 
@@ -72,23 +71,19 @@ public class Tile : Actor
         // Doors to unlock during the level.
         if (name == door1)
         {
-            doorInstance1 = (Door)Instantiate(doorPrefab);
-            doorInstance1.transform.position = this.transform.position;
+            SpawnDoor();
         }
         if (name == door2)
         {
-            doorInstance2 = (Door)Instantiate(doorPrefab);
-            doorInstance2.transform.position = this.transform.position;
+            SpawnDoor();
         }
         if (name == door3)
         {
-            doorInstance3 = (Door)Instantiate(doorPrefab);
-            doorInstance3.transform.position = this.transform.position;
+            SpawnDoor();
         }
         if (name == door4)
         {
-            doorInstance4 = (Door)Instantiate(doorPrefab);
-            doorInstance4.transform.position = this.transform.position;
+            SpawnDoor();
         }
 
         // Star blocks.
@@ -188,12 +183,25 @@ public class Tile : Actor
         {
             SpawnStonePlatform2();
         }
+        
+        // Switch Stone platforms
+        if (name == stoneBridge)
+        {
+            SpawnStoneBridge();
+        }
 
         // End door to finish the level.
         if (name == endDoor)
         {
             SpawnEndDoor();
         }
+    }
+
+    private void SpawnDoor()
+    {
+        GameObject door = (GameObject)Instantiate(doorPrefab);
+        door.transform.position = this.transform.position;
+        door.tag = "Door";
     }
 
     private void SpawnStarBlocks()
@@ -212,6 +220,7 @@ public class Tile : Actor
     {
         GameObject swBlock = (GameObject)Instantiate(switchPrefab);
         swBlock.transform.position = this.transform.position;
+        swBlock.tag = "Switch";
     }
 
     private void SpawnStonePlatform1()
@@ -224,6 +233,15 @@ public class Tile : Actor
     {
         GameObject stonePlatform = (GameObject)Instantiate(stonePlatform2Prefab);
         stonePlatform.transform.position = this.transform.position;
+    }
+
+    private void SpawnStoneBridge()
+    {
+        GameObject bridge = (GameObject)Instantiate(stonePlatform2Prefab);
+        bridge.transform.position = new Vector3(this.transform.position.x, this.transform.position.y, 1);
+        Collider2D coll = GetComponent<Collider2D>();
+        coll.enabled = false;
+        bridge.tag = "StoneBridge";
     }
 
     private void SpawnWall1()
@@ -248,12 +266,70 @@ public class Tile : Actor
     {
         EndDoor endDoor = (EndDoor)Instantiate(endDoorPrefab);
         endDoor.transform.position = this.transform.position;
+        endDoor.tag = "EndDoor";
     }
 
     private void Empty(StarBlock sb)
     {
         isStarblock = false;
         sb.Destroyed -= Empty;
+
+        GameObject[] switches = GameObject.FindGameObjectsWithTag("Switch");
+
+        if (sb.transform.position == switches[0].transform.position)
+        {
+            CloseDoor(0);
+        }
+        else if (sb.transform.position == switches[1].transform.position)
+        {
+            CloseDoor(1);
+        }
+        else if (sb.transform.position == switches[2].transform.position)
+        {
+            CloseBridge(0);
+        }
+        else if (sb.transform.position == switches[3].transform.position)
+        {
+            CloseDoor(2);
+        }
+        else if (sb.transform.position == switches[4].transform.position)
+        {
+            CloseDoor(3);
+        }
+    }
+
+    private void OpenBridge(int bridgeNumber)
+    {
+        GameObject[] bridgeRef = GameObject.FindGameObjectsWithTag("StoneBridge");
+        bridgeRef[bridgeNumber].transform.position = new Vector3(bridgeRef[bridgeNumber].transform.position.x, bridgeRef[bridgeNumber].transform.position.y, 0);
+        Collider2D coll = bridgeRef[bridgeNumber].GetComponent<Collider2D>();
+        coll.enabled = true;
+    }
+
+    private void CloseBridge(int bridgeNumber)
+    {
+        GameObject[] bridgeRef = GameObject.FindGameObjectsWithTag("StoneBridge");
+        bridgeRef[bridgeNumber].transform.position = new Vector3(bridgeRef[bridgeNumber].transform.position.x, bridgeRef[bridgeNumber].transform.position.y, 1);
+        Collider2D coll = bridgeRef[bridgeNumber].GetComponent<Collider2D>();
+        coll.enabled = false;
+    }
+
+    private void OpenDoor(int doorNumber)
+    {
+        // Set z position behind and disable the collider2D.
+        GameObject[] doorRef = GameObject.FindGameObjectsWithTag("Door");
+        doorRef[doorNumber].transform.position = new Vector3(doorRef[doorNumber].transform.position.x, doorRef[doorNumber].transform.position.y, 1);
+        Collider2D coll = doorRef[doorNumber].GetComponent<Collider2D>();
+        coll.enabled = false;
+    }
+
+    private void CloseDoor(int doorNumber)
+    {
+        // Set z position back and enable the collider2D.
+        GameObject[] doorRef = GameObject.FindGameObjectsWithTag("Door");
+        doorRef[doorNumber].transform.position = new Vector3(doorRef[doorNumber].transform.position.x, doorRef[doorNumber].transform.position.y, 0);
+        Collider2D coll = doorRef[doorNumber].GetComponent<Collider2D>();
+        coll.enabled = true;
     }
 
     void OnMouseDown()
@@ -265,12 +341,30 @@ public class Tile : Actor
             starBlock.Destroyed += Empty;
             isStarblock = true;
         }
-
         
-        Debug.Log(name);
-        if (name == switch1 && doorInstance1 != null)
+        if (name == switch1)
         {
-            doorInstance1.transform.position = new Vector3(0, 0, 0);
+            OpenDoor(0);
+        }
+
+        if (name == switch2)
+        {
+            OpenDoor(1);
+        }
+
+        if (name == switch3)
+        {
+            OpenBridge(0);
+        }
+
+        if (name == switch4)
+        {
+            OpenDoor(2);
+        }
+
+        if (name == switch5)
+        {
+            OpenDoor(3);
         }
     }
 }

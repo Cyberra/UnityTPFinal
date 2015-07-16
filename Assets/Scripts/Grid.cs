@@ -15,6 +15,7 @@ public class Grid : Actor
 
 	void Awake()
     {
+        // Initialisation
 		for (int i = 0; i < width; ++i) 
         {
 			distanceX += squareSize;

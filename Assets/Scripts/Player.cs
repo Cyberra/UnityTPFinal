@@ -43,9 +43,6 @@ public class Player : Actor
     // Animations used for the player.
     void myAnimations(float dt)
     {
-        // Hold the player on the desired rotation.
-        myBody.transform.localRotation = new Quaternion(0, 0, 0, 0);
-
         // Timer to delay the idle state.
         idleSpacingTime += dt;
         rollReset += dt;
@@ -167,7 +164,7 @@ public class Player : Actor
 	void OnCollisionEnter2D(Collision2D coll) 
     {
 		// Jumping conditions
-		if (coll.gameObject.tag == "Ground") 
+		if (coll.gameObject.tag == "Ground" || coll.gameObject.tag == "StoneBridge") 
         {
 			isJumping = false;
 		}

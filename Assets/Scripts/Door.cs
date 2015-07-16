@@ -3,7 +3,6 @@ using System.Collections;
 
 public class Door : Actor 
 {
-    private Door myDoor;
 	// Use this for initialization
 	void Start () 
     {
@@ -15,15 +14,4 @@ public class Door : Actor
     {
 	    
 	}
-
-    public void Open(Door doorInstance1)
-    {
-        myDoor = doorInstance1;
-        OnDestroy();
-    }
-
-    void OnDestroy()
-    {
-        Destroy(myDoor);
-    }
 }
