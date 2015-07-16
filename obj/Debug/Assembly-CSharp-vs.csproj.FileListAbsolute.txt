@@ -1,0 +1,14 @@
+D:\MaximeBeaulieu\ProgAvancée2D\TP_Final\UnityTPFinal\Temp\bin\Debug\Assembly-CSharp.dll
+D:\MaximeBeaulieu\ProgAvancée2D\TP_Final\UnityTPFinal\Temp\bin\Debug\Assembly-CSharp.pdb
+D:\MaximeBeaulieu\ProgAvancée2D\TP_Final\UnityTPFinal\Temp\bin\Debug\UnityEditor.dll
+D:\MaximeBeaulieu\ProgAvancée2D\TP_Final\UnityTPFinal\Temp\bin\Debug\UnityEditor.iOS.Extensions.Xcode.dll
+D:\MaximeBeaulieu\ProgAvancée2D\TP_Final\UnityTPFinal\Temp\bin\Debug\UnityEngine.dll
+D:\MaximeBeaulieu\ProgAvancée2D\TP_Final\UnityTPFinal\Temp\bin\Debug\UnityEngine.UI.dll
+D:\MaximeBeaulieu\ProgAvancée2D\TP_Final\UnityTPFinal\Temp\bin\Debug\Mono.Cecil.dll
+D:\MaximeBeaulieu\ProgAvancée2D\TP_Final\UnityTPFinal\Temp\bin\Debug\Unity.SerializationLogic.dll
+D:\MaximeBeaulieu\ProgAvancée2D\TP_Final\UnityTPFinal\Temp\bin\Debug\Unity.DataContract.dll
+D:\MaximeBeaulieu\ProgAvancée2D\TP_Final\UnityTPFinal\Temp\bin\Debug\ICSharpCode.NRefactory.dll
+D:\MaximeBeaulieu\ProgAvancée2D\TP_Final\UnityTPFinal\Temp\bin\Debug\Unity.CecilTools.dll
+D:\MaximeBeaulieu\ProgAvancée2D\TP_Final\UnityTPFinal\obj\Debug\Assembly-CSharp-vs.csprojResolveAssemblyReference.cache
+D:\MaximeBeaulieu\ProgAvancée2D\TP_Final\UnityTPFinal\obj\Debug\Assembly-CSharp.dll
+D:\MaximeBeaulieu\ProgAvancée2D\TP_Final\UnityTPFinal\obj\Debug\Assembly-CSharp.pdb

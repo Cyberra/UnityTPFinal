@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
-public class Grid : MonoBehaviour 
+public class Grid : Actor 
 {
     public Tile plane;
 	public int width;
@@ -11,7 +12,6 @@ public class Grid : MonoBehaviour
 	public float squareSize;
 
     public Tile[,] grid = new Tile[100, 100];
-
 
 	void Awake()
     {
@@ -23,7 +23,7 @@ public class Grid : MonoBehaviour
             {
 				distanceY += squareSize;
                 Tile gridPlane = (Tile)Instantiate(plane);
-				gridPlane.transform.position = new Vector3(gridPlane.transform.position.x + distanceX, gridPlane.transform.position.y + distanceY);
+                gridPlane.transform.position = new Vector3(gridPlane.transform.position.x + distanceX, gridPlane.transform.position.y + distanceY);
 				grid[i, j] = gridPlane;
                 gridPlane.gameObject.name = "Tile" + i + "-" + j;
 			}
