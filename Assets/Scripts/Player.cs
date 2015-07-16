@@ -15,6 +15,7 @@ public class Player : MonoBehaviour
     // Adjust the player movement.
 	public float playerSpeed;
 	public float jumpPower;
+    public float playerRange;
 
     // Keep public to communicate through scripts.
     [HideInInspector]
@@ -42,23 +43,32 @@ public class Player : MonoBehaviour
 		myControls();
 	}
 
+    private void UpdateTimers()
+    {
+        // Timer for the idle state.
+        if (idleSpacingTime >= 3f)
+        {
+            idleSpacingTime = 0;
+            myAnim.SetFloat("IdleSpacing", 0);
+        }
+
+        // Timer to reset the roll state when stuck with it on the ground.
+        if (rollReset >= 1.0f)
+        {
+            rollReset = 0;
+        }
+
+        // Set the variables inside the Animator.
+        myAnim.SetFloat("IdleSpacing", idleSpacingTime);
+        myAnim.SetFloat("RollReset", rollReset);
+    }
+
     // Animations used for the player.
     void myAnimations(float dt)
     {
         // Timer to delay the idle state.
         idleSpacingTime += dt;
         rollReset += dt;
-        if (idleSpacingTime >= 3f)
-        {
-            idleSpacingTime = 0;
-            myAnim.SetFloat("IdleSpacing", 0);
-        }
-        if (rollReset >= 1.0f)
-        {
-            rollReset = 0;
-        }
-        myAnim.SetFloat("IdleSpacing", idleSpacingTime);
-        myAnim.SetFloat("RollReset", rollReset);
         
         // Play the correct animation depending on the playing condition.
         // animChoice represents the variable inside the state machine for the animation inside Unity.
@@ -129,37 +139,50 @@ public class Player : MonoBehaviour
         myAnim.SetInteger("Choice", animChoice);
     }
 
-	// Controls used by the player.
-	void myControls() 
+    private void MoveRight()
     {
-        // Move right
-		if (Input.GetKey (KeyCode.D) && myBody.velocity.x <= 2.0f)
+        // Use the D key or the right arrow.
+        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow) && myBody.velocity.x <= 2.0f)
         {
+            // Sets the correct velocity.
             if (myBody.velocity.x <= 0)
             {
                 myBody.velocity = new Vector2(myBody.velocity.x, myBody.velocity.y);
             }
-			myBody.AddForce(new Vector2(playerSpeed, 0), ForceMode2D.Force);
-            //myBody.velocity = new Vector3(playerSpeed, myBody.velocity.y, 0);
-		}
+            myBody.AddForce(new Vector2(playerSpeed, 0), ForceMode2D.Force);
+        }
+    }
 
-        // Move left
-		if (Input.GetKey (KeyCode.A) && myBody.velocity.x >= -2.0f) 
+    private void MoveLeft()
+    {
+        // Use the A key or the left arrow.
+        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow) && myBody.velocity.x >= -2.0f)
         {
+            // Sets the correct velocity.
             if (myBody.velocity.x >= 0)
             {
                 myBody.velocity = new Vector2(myBody.velocity.x, myBody.velocity.y);
             }
             myBody.AddForce(new Vector2(-playerSpeed, 0), ForceMode2D.Force);
-            //myBody.velocity = new Vector3(-playerSpeed, myBody.velocity.y, 0);
-		}
+        }
+    }
 
-        // Jump
-		if (Input.GetKey (KeyCode.Space) && isJumping == false) 
+    private void Jump()
+    {
+        // Jump by pressing space bar.
+        if (Input.GetKey(KeyCode.Space) && isJumping == false)
         {
-			isJumping = true;
+            isJumping = true;
             myBody.velocity = new Vector3(myBody.velocity.x, jumpPower, 0);
-		}
+        }
+    }
+
+	// Controls used by the player.
+	void myControls() 
+    {
+        MoveRight();
+        MoveLeft();
+        Jump();
 	}
 
 	// On any collision detection, the player can't jump.
@@ -170,5 +193,11 @@ public class Player : MonoBehaviour
         {
 			isJumping = false;
 		}
+
+        // If the player reaches the ending door.
+        if (coll.gameObject.tag == "EndDoor")
+        {
+            Application.LoadLevel("EndScreen");
+        }
 	}
 }

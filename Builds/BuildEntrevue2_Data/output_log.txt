@@ -1,0 +1,68 @@
+Initialize engine version: 5.1.1f1 (2046fc06d4d8)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: AMD Radeon HD 6800 Series (ID=0x6739)
+    Vendor:   ATI
+    VRAM:     1010 MB
+Default GameObject Tag: EndDoor already registered
+ 
+(Filename:  Line: 83)
+
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Propriétaire\Desktop\Unity\TPFinal\Builds\BuildEntrevue2_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Propriétaire\Desktop\Unity\TPFinal\Builds\BuildEntrevue2_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Propriétaire\Desktop\Unity\TPFinal\Builds\BuildEntrevue2_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Propriétaire\Desktop\Unity\TPFinal\Builds\BuildEntrevue2_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Propriétaire\Desktop\Unity\TPFinal\Builds\BuildEntrevue2_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Propriétaire\Desktop\Unity\TPFinal\Builds\BuildEntrevue2_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Propriétaire\Desktop\Unity\TPFinal\Builds\BuildEntrevue2_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Propriétaire\Desktop\Unity\TPFinal\Builds\BuildEntrevue2_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Propriétaire\Desktop\Unity\TPFinal\Builds\BuildEntrevue2_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\Users\Propriétaire\Desktop\Unity\TPFinal\Builds\BuildEntrevue2_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  0.096 seconds
+desktop: 1920x1080 60Hz; virtual: 3840x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+Platform assembly: C:\Users\Propriétaire\Desktop\Unity\TPFinal\Builds\BuildEntrevue2_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Propriétaire\Desktop\Unity\TPFinal\Builds\BuildEntrevue2_Data\Managed\System.dll (this message is harmless)
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1715)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 4.322589 ms
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 8101.
+Total: 3.020021 ms (FindLiveObjects: 0.322022 ms CreateObjectMapping: 0.163482 ms MarkObjects: 2.507327 ms  DeleteObjects: 0.026835 ms)
+
+ArgumentException: The thing you want to instantiate is null.
+  at UnityEngine.Object.CheckNullArgument (System.Object arg, System.String message) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original) [0x00000] in <filename unknown>:0 
+  at Tile.SpawnEndDoor () [0x00000] in <filename unknown>:0 
+  at Tile.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at Tile.CloseSwitch (.StarBlock sb) [0x00000] in <filename unknown>:0 
+  at Tile.Empty (.StarBlock sb) [0x00000] in <filename unknown>:0 
+  at StarBlock.OnDestroy () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at Tile.CloseSwitch (.StarBlock sb) [0x00000] in <filename unknown>:0 
+  at Tile.Empty (.StarBlock sb) [0x00000] in <filename unknown>:0 
+  at StarBlock.OnDestroy () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at Tile.CloseSwitch (.StarBlock sb) [0x00000] in <filename unknown>:0 
+  at Tile.Empty (.StarBlock sb) [0x00000] in <filename unknown>:0 
+  at StarBlock.OnDestroy () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+

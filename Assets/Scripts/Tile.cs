@@ -13,7 +13,7 @@ public class Tile : MonoBehaviour
     public StarBlock sbPrefab;
     public GameObject switchPrefab;
     public GameObject doorPrefab;
-    public EndDoor endDoorPrefab;
+    public GameObject endDoorPrefab;
     public GameObject platformPrefab;
     public GameObject wall1Prefab;
     public GameObject wall2Prefab;
@@ -21,6 +21,7 @@ public class Tile : MonoBehaviour
     public GameObject stonePlatform1Prefab;
     public GameObject stonePlatform2Prefab;
 
+    // Set tiles emptied.
     private bool isStarblock = false;
 
     // Doors
@@ -39,10 +40,10 @@ public class Tile : MonoBehaviour
     private string platform1 = "Tile24-13";
     private string platform2 = "Tile28-11";
     private string platform3 = "Tile24-10";
-    private string platform4 = "Tile47-12";
+    private string platform4 = "Tile47-13";
     private string platform5 = "Tile43-11";
     private string platform6 = "Tile47-9";
-    private string platform7 = "Tile43-8";
+    private string platform7 = "Tile43-7";
 
     // Switches
     private string switch1 = "Tile14-10";
@@ -69,12 +70,14 @@ public class Tile : MonoBehaviour
 
     void Awake()
     {
+        // Set my reference.
         myPlayer = Player.FindObjectOfType<Player>();
     }
 
 	// Need to use 'Start' in order to place the objects.
     void Start()
     {
+
         // Doors to unlock during the level.
         if (name == door1)
         {
@@ -204,6 +207,7 @@ public class Tile : MonoBehaviour
         }
     }
 
+    // Create doors with right tag.
     private void SpawnDoor()
     {
         GameObject door = (GameObject)Instantiate(doorPrefab);
@@ -211,19 +215,22 @@ public class Tile : MonoBehaviour
         door.tag = "Door";
     }
 
+    // Create a star block and listen to the event.
     private void SpawnStarBlocks()
     {
         StarBlock sb = (StarBlock)Instantiate(sbPrefab);
-        sb.transform.position = this.transform.position;
+        sb.transform.position = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z - 0.01f);
         sb.Destroyed += Empty;
     }
 
+    // Spawn the star platforms.
     private void SpawnPlatforms()
     {
         GameObject platform = (GameObject)Instantiate(platformPrefab);
         platform.transform.position = this.transform.position;
     }
 
+    // Spawn my switched inside the level.
     private void SpawnSwitch()
     {
         GameObject swBlock = (GameObject)Instantiate(switchPrefab);
@@ -231,18 +238,23 @@ public class Tile : MonoBehaviour
         swBlock.tag = "Switch";
     }
 
+    // Big stone platform.
     private void SpawnStonePlatform1()
     {
         GameObject stonePlatform = (GameObject)Instantiate(stonePlatform1Prefab);
         stonePlatform.transform.position = this.transform.position;
+        stonePlatform.tag = "Ground";
     }
 
+    // Small stone paltforms.
     private void SpawnStonePlatform2()
     {
         GameObject stonePlatform = (GameObject)Instantiate(stonePlatform2Prefab);
         stonePlatform.transform.position = this.transform.position;
+        stonePlatform.tag = "Ground";
     }
 
+    // Spawn the bridge behind the level because the player needs to make the bridge appear via a switch.
     private void SpawnStoneBridge()
     {
         GameObject bridge = (GameObject)Instantiate(stonePlatform2Prefab);
@@ -252,127 +264,163 @@ public class Tile : MonoBehaviour
         bridge.tag = "StoneBridge";
     }
 
+    // Spawn a wall.
     private void SpawnWall1()
     {
         GameObject wall = (GameObject)Instantiate(wall1Prefab);
         wall.transform.position = this.transform.position;
     }
 
+    // Another wall.
     private void SpawnWall2()
     {
         GameObject wall = (GameObject)Instantiate(wall2Prefab);
         wall.transform.position = this.transform.position;
     }
 
+    // And the biggest wall.
     private void SpawnWall3()
     {
         GameObject wall = (GameObject)Instantiate(wall3Prefab);
         wall.transform.position = this.transform.position;
     }
 
+    // My door to end the level.
     private void SpawnEndDoor()
     {
-        EndDoor endDoor = (EndDoor)Instantiate(endDoorPrefab);
+        GameObject endDoor = (GameObject)Instantiate(endDoorPrefab);
         endDoor.transform.position = this.transform.position;
         endDoor.tag = "EndDoor";
     }
 
+    // The event used for my starblocks.
     private void Empty(StarBlock sb)
     {
         isStarblock = false;
         sb.Destroyed -= Empty;
 
+        CloseSwitch(sb);
+    }
+
+    // When the player takes a star block out of a switch, this method is called to respawn the correct asset.
+    private void CloseSwitch(StarBlock sb)
+    {
+        // Get all my switches and associate the correct ones to the right ones.
         GameObject[] switches = GameObject.FindGameObjectsWithTag("Switch");
-        if (sb.transform.position == switches[0].transform.position)
+        if (sb.transform.position == switches[0].transform.position && sb != null)
         {
             CloseDoor(0);
         }
-        else if (sb.transform.position == switches[1].transform.position)
+        else if (sb.transform.position == switches[1].transform.position && sb != null)
         {
             CloseDoor(1);
         }
-        else if (sb.transform.position == switches[2].transform.position)
+        // Had to use Epsilon in order to get through a bug where the platform was not closing.
+        else if (sb.transform.position.x >= switches[2].transform.position.x - Mathf.Epsilon && sb.transform.position.x <= switches[2].transform.position.x + Mathf.Epsilon && sb.transform.position.y >= switches[2].transform.position.y - Mathf.Epsilon && sb.transform.position.y <= switches[2].transform.position.y + Mathf.Epsilon && sb != null)
         {
             CloseBridge(0);
         }
-        else if (sb.transform.position == switches[3].transform.position)
+        else if (sb.transform.position == switches[3].transform.position && sb != null)
         {
             CloseDoor(2);
         }
-        else if (sb.transform.position == switches[4].transform.position)
+        else if (sb.transform.position == switches[4].transform.position && sb != null)
         {
             CloseDoor(3);
         }
     }
 
+    // Make the bridge appear on the screen using his z position.
     private void OpenBridge(int bridgeNumber)
     {
         GameObject[] bridgeRef = GameObject.FindGameObjectsWithTag("StoneBridge");
         bridgeRef[bridgeNumber].transform.position = new Vector3(bridgeRef[bridgeNumber].transform.position.x, bridgeRef[bridgeNumber].transform.position.y, 0);
+        // Enable the collision.
         Collider2D coll = bridgeRef[bridgeNumber].GetComponent<Collider2D>();
         coll.enabled = true;
     }
 
+    // Close the bridge using his z position.
     private void CloseBridge(int bridgeNumber)
     {
         GameObject[] bridgeRef = GameObject.FindGameObjectsWithTag("StoneBridge");
         bridgeRef[bridgeNumber].transform.position = new Vector3(bridgeRef[bridgeNumber].transform.position.x, bridgeRef[bridgeNumber].transform.position.y, 1);
+        // Disable the collision
         Collider2D coll = bridgeRef[bridgeNumber].GetComponent<Collider2D>();
         coll.enabled = false;
     }
-
+    
+    // Open a door with his z axis.
     private void OpenDoor(int doorNumber)
     {
         // Set z position behind and disable the collider2D.
         GameObject[] doorRef = GameObject.FindGameObjectsWithTag("Door");
         doorRef[doorNumber].transform.position = new Vector3(doorRef[doorNumber].transform.position.x, doorRef[doorNumber].transform.position.y, 1);
+        // Disable the collision so the player can pass
         Collider2D coll = doorRef[doorNumber].GetComponent<Collider2D>();
         coll.enabled = false;
     }
 
+    // Close a door with his z axis.
     private void CloseDoor(int doorNumber)
     {
         // Set z position back and enable the collider2D.
         GameObject[] doorRef = GameObject.FindGameObjectsWithTag("Door");
         doorRef[doorNumber].transform.position = new Vector3(doorRef[doorNumber].transform.position.x, doorRef[doorNumber].transform.position.y, 0);
+        // Enable the collision
         Collider2D coll = doorRef[doorNumber].GetComponent<Collider2D>();
         coll.enabled = true;
     }
 
     void OnMouseDown()
     {
-        if (isStarblock == false && myPlayer.inventoryStarBlocks > 0)
-        {
-            StarBlock starBlock = (StarBlock)Instantiate(sbPrefab);
-            starBlock.transform.position = this.transform.position;
-            starBlock.Destroyed += Empty;
-            isStarblock = true;
-            myPlayer.inventoryStarBlocks--;
-        }
-        
-        if (name == switch1)
-        {
-            OpenDoor(0);
-        }
+        // Get my mouse pos on screen with world coordinate using the origin.
+        Ray mousePos = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-        if (name == switch2)
+        // Check if the range to pickup blocks is ok
+        if (Mathf.Abs(mousePos.origin.x - myPlayer.transform.position.x) <= myPlayer.playerRange && Mathf.Abs(mousePos.origin.y - myPlayer.transform.position.y) <= myPlayer.playerRange && mousePos.origin.y >= myPlayer.transform.position.y - 0.1f)
         {
-            OpenDoor(1);
-        }
+            // Do I have any star blocks to place in my inventory?
+            if (isStarblock == false && myPlayer.inventoryStarBlocks > 0)
+            {
+                StarBlock starBlock = (StarBlock)Instantiate(sbPrefab);
+                starBlock.transform.position = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z - 0.01f);
+                // Start listening to my event.
+                starBlock.Destroyed += Empty;
+                isStarblock = true;
+                // Make sure to take it out
+                myPlayer.inventoryStarBlocks--;
+            }
 
-        if (name == switch3)
-        {
-            OpenBridge(0);
-        }
+            // Switch for door #1.
+            if (name == switch1)
+            {
+                OpenDoor(0);
+            }
 
-        if (name == switch4)
-        {
-            OpenDoor(2);
-        }
+            // Switch for door #2.
+            if (name == switch2)
+            {
+                OpenDoor(1);
+            }
 
-        if (name == switch5)
-        {
-            OpenDoor(3);
+            // Switch for the bridge.
+            if (name == switch3)
+            {
+                OpenBridge(0);
+            }
+
+            // Switch for door #3.
+            if (name == switch4)
+            {
+                OpenDoor(2);
+            }
+
+            // Switch for door #4.
+            if (name == switch5)
+            {
+                OpenDoor(3);
+            }
         }
     }
 }
