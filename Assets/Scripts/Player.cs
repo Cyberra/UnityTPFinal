@@ -2,13 +2,15 @@
 using System.Timers;
 using System.Collections;
 
-public class Player : Actor 
+public class Player : MonoBehaviour 
 {
     // My references in my components.
     [HideInInspector]
     public Animator myAnim;
     [HideInInspector]
 	public Rigidbody2D myBody;
+    [HideInInspector]
+    public int inventoryStarBlocks = 0;
 
     // Adjust the player movement.
 	public float playerSpeed;

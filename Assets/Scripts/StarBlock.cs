@@ -1,13 +1,22 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class StarBlock : Actor 
+public class StarBlock : MonoBehaviour 
 {
     public delegate void StarBlockDestroyed(StarBlock sb);
     public event StarBlockDestroyed Destroyed;
-    
+
+    private Player myPlayer;
+
+    void Awake()
+    {
+        myPlayer = Player.FindObjectOfType<Player>();
+    }
+
     void OnMouseDown()
     {
+        myPlayer.inventoryStarBlocks++;
+        Debug.Log(myPlayer.inventoryStarBlocks);
         // Event for Tiles.
         Destroy(gameObject);
     }

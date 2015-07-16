@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class FollowCamera : Actor 
+public class FollowCamera : MonoBehaviour 
 {
 
 	public Player player;
@@ -23,17 +23,17 @@ public class FollowCamera : Actor
 	void UpdateCamera(){
 		if (player != null) 
         {
-            aTransform.LookAt(new Vector3(player.aTransform.position.x, player.aTransform.position.y + cameraHeight, 0));
+            transform.LookAt(new Vector3(player.transform.position.x, player.transform.position.y + cameraHeight, 0));
 		}
 
 		if (player.isJumping) 
         {
-            aTransform.position = Vector3.Lerp(new Vector3(player.aTransform.position.x, aTransform.position.y, aTransform.position.z), new Vector3(player.aTransform.position.x, player.aTransform.position.y, aTransform.position.z), 0.3f);
+            transform.position = Vector3.Lerp(new Vector3(player.transform.position.x, transform.position.y, transform.position.z), new Vector3(player.transform.position.x, player.transform.position.y, transform.position.z), 0.3f);
 		}
 
 		if (!player.isJumping) 
         {
-            aTransform.position = Vector3.Lerp(new Vector3(player.aTransform.position.x, aTransform.position.y, aTransform.position.z), new Vector3(player.aTransform.position.x, player.aTransform.position.y, aTransform.position.z), 0.3f);
+            transform.position = Vector3.Lerp(new Vector3(player.transform.position.x, transform.position.y, transform.position.z), new Vector3(player.transform.position.x, player.transform.position.y, transform.position.z), 0.3f);
 		}
 	}
 }

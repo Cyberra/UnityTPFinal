@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class Grid : Actor 
+public class Grid : MonoBehaviour 
 {
     public Tile plane;
 	public int width;

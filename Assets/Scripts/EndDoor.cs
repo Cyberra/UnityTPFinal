@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class EndDoor : Actor 
+public class EndDoor : MonoBehaviour 
 {
 
 	// Use this for initialization

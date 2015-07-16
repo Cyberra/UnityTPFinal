@@ -4,8 +4,11 @@ using System.Collections;
 // Using list to store my objects on the scene.
 using System.Collections.Generic;
 
-public class Tile : Actor
+public class Tile : MonoBehaviour
 {
+    // Player reference
+    private Player myPlayer;
+
     // Assign my Prefabs inside Unity.
     public StarBlock sbPrefab;
     public GameObject switchPrefab;
@@ -48,7 +51,6 @@ public class Tile : Actor
     private string switch4 = "Tile74-6";
     private string switch5 = "Tile75-6";
 
-
     // Walls
     private string wall1 = "Tile20-14";
     private string wall2 = "Tile40-13";
@@ -64,6 +66,11 @@ public class Tile : Actor
 
     // EndDoor
     private string endDoor = "Tile81-5";
+
+    void Awake()
+    {
+        myPlayer = Player.FindObjectOfType<Player>();
+    }
 
 	// Need to use 'Start' in order to place the objects.
     void Start()
@@ -208,6 +215,7 @@ public class Tile : Actor
     {
         StarBlock sb = (StarBlock)Instantiate(sbPrefab);
         sb.transform.position = this.transform.position;
+        sb.Destroyed += Empty;
     }
 
     private void SpawnPlatforms()
@@ -275,7 +283,6 @@ public class Tile : Actor
         sb.Destroyed -= Empty;
 
         GameObject[] switches = GameObject.FindGameObjectsWithTag("Switch");
-
         if (sb.transform.position == switches[0].transform.position)
         {
             CloseDoor(0);
@@ -334,12 +341,13 @@ public class Tile : Actor
 
     void OnMouseDown()
     {
-        if (isStarblock == false)
+        if (isStarblock == false && myPlayer.inventoryStarBlocks > 0)
         {
             StarBlock starBlock = (StarBlock)Instantiate(sbPrefab);
             starBlock.transform.position = this.transform.position;
             starBlock.Destroyed += Empty;
             isStarblock = true;
+            myPlayer.inventoryStarBlocks--;
         }
         
         if (name == switch1)
