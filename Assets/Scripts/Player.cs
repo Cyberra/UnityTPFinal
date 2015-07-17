@@ -142,7 +142,7 @@ public class Player : MonoBehaviour
     private void MoveRight()
     {
         // Use the D key or the right arrow.
-        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow) && myBody.velocity.x <= 2.0f)
+        if (Input.GetKey(KeyCode.D) && myBody.velocity.x <= 2.0f || Input.GetKey(KeyCode.RightArrow) && myBody.velocity.x <= 2.0f)
         {
             // Sets the correct velocity.
             if (myBody.velocity.x <= 0)
@@ -156,7 +156,7 @@ public class Player : MonoBehaviour
     private void MoveLeft()
     {
         // Use the A key or the left arrow.
-        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow) && myBody.velocity.x >= -2.0f)
+        if (Input.GetKey(KeyCode.A) && myBody.velocity.x >= -2.0f || Input.GetKey(KeyCode.LeftArrow) && myBody.velocity.x >= -2.0f)
         {
             // Sets the correct velocity.
             if (myBody.velocity.x >= 0)
