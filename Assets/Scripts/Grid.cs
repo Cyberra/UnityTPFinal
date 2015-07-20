@@ -29,6 +29,8 @@ public class Grid : MonoBehaviour
     // With the public width/height, the player can freely adjust the size of the grid used in the level.
     private void InitGrid()
     {
+        // Standalone version for windows. CONSTANTE DE COMPILATION
+        #if UNITY_STANDALONE_WIN
         for (int i = 0; i < width; ++i)
         {
             // Change the x coordinate for the next tile.
@@ -46,5 +48,6 @@ public class Grid : MonoBehaviour
                 gridPlane.gameObject.name = "Tile" + i + "-" + j;
             }
         }
+        #endif
     }
 }

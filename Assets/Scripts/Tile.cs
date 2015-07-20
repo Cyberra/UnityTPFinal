@@ -259,9 +259,8 @@ public class Tile : MonoBehaviour
     {
         GameObject bridge = (GameObject)Instantiate(stonePlatform2Prefab);
         bridge.transform.position = new Vector3(this.transform.position.x, this.transform.position.y, 1);
-        Collider2D coll = GetComponent<Collider2D>();
-        coll.enabled = false;
         bridge.tag = "StoneBridge";
+        CloseBridge(0);
     }
 
     // Spawn a wall.
@@ -380,6 +379,38 @@ public class Tile : MonoBehaviour
         // Check if the range to pickup blocks is ok
         if (Mathf.Abs(mousePos.origin.x - myPlayer.transform.position.x) <= myPlayer.playerRange && Mathf.Abs(mousePos.origin.y - myPlayer.transform.position.y) <= myPlayer.playerRange && mousePos.origin.y >= myPlayer.transform.position.y - 0.1f)
         {
+            // Switch for door #1.
+            if (name == switch1 && myPlayer.inventoryStarBlocks > 0)
+            {
+                OpenDoor(0);
+            }
+
+            // Switch for door #2.
+            if (name == switch2 && myPlayer.inventoryStarBlocks > 0)
+            {
+                OpenDoor(1);
+            }
+
+            // Switch for the bridge.
+            if (name == switch3 && myPlayer.inventoryStarBlocks > 0)
+            {
+                OpenBridge(0);
+            }
+
+            // Switch for door #3.
+            if (name == switch4 && myPlayer.inventoryStarBlocks > 0)
+            {
+                OpenDoor(2);
+            }
+
+            // Switch for door #4.
+            if (name == switch5 && myPlayer.inventoryStarBlocks > 0)
+            {
+                OpenDoor(3);
+            }
+
+            // MAKE SURE TO PLACE BEHAVIORS BEFORE DELETING THE BLOCK !
+
             // Do I have any star blocks to place in my inventory?
             if (isStarblock == false && myPlayer.inventoryStarBlocks > 0)
             {
@@ -390,36 +421,6 @@ public class Tile : MonoBehaviour
                 isStarblock = true;
                 // Make sure to take it out
                 myPlayer.inventoryStarBlocks--;
-            }
-
-            // Switch for door #1.
-            if (name == switch1)
-            {
-                OpenDoor(0);
-            }
-
-            // Switch for door #2.
-            if (name == switch2)
-            {
-                OpenDoor(1);
-            }
-
-            // Switch for the bridge.
-            if (name == switch3)
-            {
-                OpenBridge(0);
-            }
-
-            // Switch for door #3.
-            if (name == switch4)
-            {
-                OpenDoor(2);
-            }
-
-            // Switch for door #4.
-            if (name == switch5)
-            {
-                OpenDoor(3);
             }
         }
     }
