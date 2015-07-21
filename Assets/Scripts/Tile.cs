@@ -298,7 +298,10 @@ public class Tile : MonoBehaviour
         isStarblock = false;
         sb.Destroyed -= Empty;
 
-        CloseSwitch(sb);
+        if (sb != null)
+        {
+            CloseSwitch(sb);
+        }
     }
 
     // When the player takes a star block out of a switch, this method is called to respawn the correct asset.
@@ -307,23 +310,23 @@ public class Tile : MonoBehaviour
         // Get all my switches and associate the correct ones to the right ones.
         GameObject[] switches = GameObject.FindGameObjectsWithTag("Switch");
         // Had to use Epsilon in order to get through a bug where the platform was not closing.
-        if (sb.transform.position.x >= switches[0].transform.position.x - Mathf.Epsilon && sb.transform.position.x <= switches[0].transform.position.x + Mathf.Epsilon && sb.transform.position.y >= switches[0].transform.position.y - Mathf.Epsilon && sb.transform.position.y <= switches[0].transform.position.y + Mathf.Epsilon && sb != null)
+        if (sb.transform.position.x >= switches[0].transform.position.x - Mathf.Epsilon && sb.transform.position.x <= switches[0].transform.position.x + Mathf.Epsilon && sb.transform.position.y >= switches[0].transform.position.y - Mathf.Epsilon && sb.transform.position.y <= switches[0].transform.position.y + Mathf.Epsilon && sb != null && switches != null)
         {
             CloseDoor(0);
         }
-        else if (sb.transform.position.x >= switches[1].transform.position.x - Mathf.Epsilon && sb.transform.position.x <= switches[1].transform.position.x + Mathf.Epsilon && sb.transform.position.y >= switches[1].transform.position.y - Mathf.Epsilon && sb.transform.position.y <= switches[1].transform.position.y + Mathf.Epsilon && sb != null)
+        else if (sb.transform.position.x >= switches[1].transform.position.x - Mathf.Epsilon && sb.transform.position.x <= switches[1].transform.position.x + Mathf.Epsilon && sb.transform.position.y >= switches[1].transform.position.y - Mathf.Epsilon && sb.transform.position.y <= switches[1].transform.position.y + Mathf.Epsilon && sb != null && switches != null)
         {
             CloseDoor(1);
         }
-        else if (sb.transform.position.x >= switches[2].transform.position.x - Mathf.Epsilon && sb.transform.position.x <= switches[2].transform.position.x + Mathf.Epsilon && sb.transform.position.y >= switches[2].transform.position.y - Mathf.Epsilon && sb.transform.position.y <= switches[2].transform.position.y + Mathf.Epsilon && sb != null)
+        else if (sb.transform.position.x >= switches[2].transform.position.x - Mathf.Epsilon && sb.transform.position.x <= switches[2].transform.position.x + Mathf.Epsilon && sb.transform.position.y >= switches[2].transform.position.y - Mathf.Epsilon && sb.transform.position.y <= switches[2].transform.position.y + Mathf.Epsilon && sb != null && switches != null)
         {
             CloseBridge(0);
         }
-        else if (sb.transform.position.x >= switches[3].transform.position.x - Mathf.Epsilon && sb.transform.position.x <= switches[3].transform.position.x + Mathf.Epsilon && sb.transform.position.y >= switches[3].transform.position.y - Mathf.Epsilon && sb.transform.position.y <= switches[3].transform.position.y + Mathf.Epsilon && sb != null)
+        else if (sb.transform.position.x >= switches[3].transform.position.x - Mathf.Epsilon && sb.transform.position.x <= switches[3].transform.position.x + Mathf.Epsilon && sb.transform.position.y >= switches[3].transform.position.y - Mathf.Epsilon && sb.transform.position.y <= switches[3].transform.position.y + Mathf.Epsilon && sb != null && switches != null)
         {
             CloseDoor(2);
         }
-        else if (sb.transform.position.x >= switches[4].transform.position.x - Mathf.Epsilon && sb.transform.position.x <= switches[4].transform.position.x + Mathf.Epsilon && sb.transform.position.y >= switches[4].transform.position.y - Mathf.Epsilon && sb.transform.position.y <= switches[4].transform.position.y + Mathf.Epsilon && sb != null)
+        else if (sb.transform.position.x >= switches[4].transform.position.x - Mathf.Epsilon && sb.transform.position.x <= switches[4].transform.position.x + Mathf.Epsilon && sb.transform.position.y >= switches[4].transform.position.y - Mathf.Epsilon && sb.transform.position.y <= switches[4].transform.position.y + Mathf.Epsilon && sb != null && switches != null)
         {
             CloseDoor(3);
         }
@@ -365,10 +368,16 @@ public class Tile : MonoBehaviour
     {
         // Set z position back and enable the collider2D.
         GameObject[] doorRef = GameObject.FindGameObjectsWithTag("Door");
-        doorRef[doorNumber].transform.position = new Vector3(doorRef[doorNumber].transform.position.x, doorRef[doorNumber].transform.position.y, 0);
+        if (doorRef != null)
+        {
+            doorRef[doorNumber].transform.position = new Vector3(doorRef[doorNumber].transform.position.x, doorRef[doorNumber].transform.position.y, 0);
+        }
         // Enable the collision
         Collider2D coll = doorRef[doorNumber].GetComponent<Collider2D>();
-        coll.enabled = true;
+        if (coll != null)
+        {
+            coll.enabled = true;
+        }
     }
 
     void OnMouseDown()

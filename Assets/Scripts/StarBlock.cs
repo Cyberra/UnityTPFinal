@@ -38,7 +38,7 @@ public class StarBlock : MonoBehaviour
     void OnDestroy()
     {
         // Verify is has not been destroyed yet.
-        if (Destroyed != null)
+        if (Destroyed != null && this != null)
         {
             Destroyed(this);
         }

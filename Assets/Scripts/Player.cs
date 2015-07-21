@@ -10,6 +10,8 @@ public class Player : MonoBehaviour
     [HideInInspector]
 	public Rigidbody2D myBody;
     [HideInInspector]
+    public MusicController myMusic;
+    [HideInInspector]
     public int inventoryStarBlocks = 0;
 
     // Adjust the player movement.
@@ -21,6 +23,7 @@ public class Player : MonoBehaviour
     [HideInInspector]
 	public bool isJumping;
     private bool isLanding = false;
+    public bool nextMusic = false;
 
     // Animation variables.
     private int animChoice = 0;
@@ -33,6 +36,8 @@ public class Player : MonoBehaviour
 		myBody = GetComponent<Rigidbody2D>();
         // Get my animation sheet.
         myAnim = GetComponent<Animator>();
+        // Get my music controller.
+        myMusic = MusicController.FindObjectOfType<MusicController>();
 	}
 
 	void FixedUpdate () 
@@ -197,6 +202,9 @@ public class Player : MonoBehaviour
         // If the player reaches the ending door.
         if (coll.gameObject.tag == "EndDoor")
         {
+            nextMusic = true;
+            myMusic.TransitTo(nextMusic);
+            nextMusic = false;
             Application.LoadLevel("EndScreen");
         }
 	}
