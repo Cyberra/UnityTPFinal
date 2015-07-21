@@ -33,6 +33,7 @@ public class StarBlock : MonoBehaviour
         // Get my mouse pos on screen with world coordinate using the origin.
         Ray mousePos = Camera.main.ScreenPointToRay(Input.mousePosition);
         DestroyBlock(mousePos);
+        myPlayer.blockSource.PlayOneShot(myPlayer.block, myPlayer.SFXVolume);
     }
 
     void OnDestroy()

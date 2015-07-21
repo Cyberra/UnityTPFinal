@@ -430,6 +430,7 @@ public class Tile : MonoBehaviour
                 isStarblock = true;
                 // Make sure to take it out
                 myPlayer.inventoryStarBlocks--;
+                myPlayer.blockSource.PlayOneShot(myPlayer.block, myPlayer.SFXVolume);
             }
         }
     }

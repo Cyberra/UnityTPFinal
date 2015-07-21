@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Audio;
 using System.Timers;
 using System.Collections;
 
@@ -23,12 +24,26 @@ public class Player : MonoBehaviour
     [HideInInspector]
 	public bool isJumping;
     private bool isLanding = false;
+    [HideInInspector]
     public bool nextMusic = false;
 
     // Animation variables.
     private int animChoice = 0;
     private float idleSpacingTime = 0;
     private float rollReset = 0;
+
+    // My SFXs sources
+    private AudioSource jumpSource;
+    // Communicate sound to star blocks.
+    [HideInInspector]
+    public AudioSource blockSource;
+
+    // My inspector SFX associators.
+    public AudioClip jump;
+    public AudioClip block;
+
+    // Adjust my sfx volume.
+    public float SFXVolume;
 
 	void Start () 
     {
@@ -38,6 +53,9 @@ public class Player : MonoBehaviour
         myAnim = GetComponent<Animator>();
         // Get my music controller.
         myMusic = MusicController.FindObjectOfType<MusicController>();
+        // Get my sfx.
+        jumpSource = GetComponent<AudioSource>();
+        blockSource = GetComponent<AudioSource>();
 	}
 
 	void FixedUpdate () 
@@ -179,6 +197,7 @@ public class Player : MonoBehaviour
         {
             isJumping = true;
             myBody.velocity = new Vector3(myBody.velocity.x, jumpPower, 0);
+            jumpSource.PlayOneShot(jump, SFXVolume);
         }
     }
 

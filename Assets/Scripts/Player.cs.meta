@@ -1,10 +1,16 @@
 fileFormatVersion: 2
 guid: cf249c381861d6e4690c9519130ee260
-timeCreated: 1436192083
+timeCreated: 1437486808
 licenseType: Pro
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - myAnim: {instanceID: 0}
+  - myBody: {instanceID: 0}
+  - myMusic: {instanceID: 0}
+  - blockSource: {instanceID: 0}
+  - jump: {instanceID: 0}
+  - block: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
