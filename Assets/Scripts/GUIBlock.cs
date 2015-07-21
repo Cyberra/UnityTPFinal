@@ -2,7 +2,7 @@
 using UnityEngine.UI;
 using System.Collections;
 
-public class GUI : MonoBehaviour 
+public class GUIBlock : MonoBehaviour 
 {
     // Player reference.
     private Player myPlayer;

@@ -46,13 +46,20 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\ApplyLoc.cs" />
+     <Compile Include="Assets\Scripts\Country.cs" />
      <Compile Include="Assets\Scripts\FollowCamera.cs" />
-     <Compile Include="Assets\Scripts\GUI.cs" />
+     <Compile Include="Assets\Scripts\GUIBlock.cs" />
      <Compile Include="Assets\Scripts\Grid.cs" />
+     <Compile Include="Assets\Scripts\IDEntry.cs" />
+     <Compile Include="Assets\Scripts\Language.cs" />
      <Compile Include="Assets\Scripts\LoadLevel.cs" />
+     <Compile Include="Assets\Scripts\Localizater.cs" />
+     <Compile Include="Assets\Scripts\LocalizationWindow.cs" />
      <Compile Include="Assets\Scripts\MusicController.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\QuitGame.cs" />
+     <Compile Include="Assets\Scripts\SavedData.cs" />
      <Compile Include="Assets\Scripts\StarBlock.cs" />
      <Compile Include="Assets\Scripts\Tile.cs" />
  <Reference Include="UnityEngine.UI">
