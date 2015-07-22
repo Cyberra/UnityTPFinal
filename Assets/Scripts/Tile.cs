@@ -310,25 +310,43 @@ public class Tile : MonoBehaviour
         // Get all my switches and associate the correct ones to the right ones.
         GameObject[] switches = GameObject.FindGameObjectsWithTag("Switch");
         // Had to use Epsilon in order to get through a bug where the platform was not closing.
-        if (sb.transform.position.x >= switches[0].transform.position.x - Mathf.Epsilon && sb.transform.position.x <= switches[0].transform.position.x + Mathf.Epsilon && sb.transform.position.y >= switches[0].transform.position.y - Mathf.Epsilon && sb.transform.position.y <= switches[0].transform.position.y + Mathf.Epsilon && sb != null && switches != null)
+        if (sb != null && switches != null)
         {
-            CloseDoor(0);
-        }
-        else if (sb.transform.position.x >= switches[1].transform.position.x - Mathf.Epsilon && sb.transform.position.x <= switches[1].transform.position.x + Mathf.Epsilon && sb.transform.position.y >= switches[1].transform.position.y - Mathf.Epsilon && sb.transform.position.y <= switches[1].transform.position.y + Mathf.Epsilon && sb != null && switches != null)
-        {
-            CloseDoor(1);
-        }
-        else if (sb.transform.position.x >= switches[2].transform.position.x - Mathf.Epsilon && sb.transform.position.x <= switches[2].transform.position.x + Mathf.Epsilon && sb.transform.position.y >= switches[2].transform.position.y - Mathf.Epsilon && sb.transform.position.y <= switches[2].transform.position.y + Mathf.Epsilon && sb != null && switches != null)
-        {
-            CloseBridge(0);
-        }
-        else if (sb.transform.position.x >= switches[3].transform.position.x - Mathf.Epsilon && sb.transform.position.x <= switches[3].transform.position.x + Mathf.Epsilon && sb.transform.position.y >= switches[3].transform.position.y - Mathf.Epsilon && sb.transform.position.y <= switches[3].transform.position.y + Mathf.Epsilon && sb != null && switches != null)
-        {
-            CloseDoor(2);
-        }
-        else if (sb.transform.position.x >= switches[4].transform.position.x - Mathf.Epsilon && sb.transform.position.x <= switches[4].transform.position.x + Mathf.Epsilon && sb.transform.position.y >= switches[4].transform.position.y - Mathf.Epsilon && sb.transform.position.y <= switches[4].transform.position.y + Mathf.Epsilon && sb != null && switches != null)
-        {
-            CloseDoor(3);
+            if (sb.transform.position.x >= switches[0].transform.position.x - Mathf.Epsilon &&
+                sb.transform.position.x <= switches[0].transform.position.x + Mathf.Epsilon &&
+                sb.transform.position.y >= switches[0].transform.position.y - Mathf.Epsilon &&
+                sb.transform.position.y <= switches[0].transform.position.y + Mathf.Epsilon)
+            {
+                CloseDoor(0);
+            }
+            else if (sb.transform.position.x >= switches[1].transform.position.x - Mathf.Epsilon &&
+                     sb.transform.position.x <= switches[1].transform.position.x + Mathf.Epsilon &&
+                     sb.transform.position.y >= switches[1].transform.position.y - Mathf.Epsilon &&
+                     sb.transform.position.y <= switches[1].transform.position.y + Mathf.Epsilon)
+            {
+                CloseDoor(1);
+            }
+            else if (sb.transform.position.x >= switches[2].transform.position.x - Mathf.Epsilon &&
+                     sb.transform.position.x <= switches[2].transform.position.x + Mathf.Epsilon &&
+                     sb.transform.position.y >= switches[2].transform.position.y - Mathf.Epsilon &&
+                     sb.transform.position.y <= switches[2].transform.position.y + Mathf.Epsilon)
+            {
+                CloseBridge(0);
+            }
+            else if (sb.transform.position.x >= switches[3].transform.position.x - Mathf.Epsilon &&
+                     sb.transform.position.x <= switches[3].transform.position.x + Mathf.Epsilon &&
+                     sb.transform.position.y >= switches[3].transform.position.y - Mathf.Epsilon &&
+                     sb.transform.position.y <= switches[3].transform.position.y + Mathf.Epsilon)
+            {
+                CloseDoor(2);
+            }
+            else if (sb.transform.position.x >= switches[4].transform.position.x - Mathf.Epsilon &&
+                     sb.transform.position.x <= switches[4].transform.position.x + Mathf.Epsilon &&
+                     sb.transform.position.y >= switches[4].transform.position.y - Mathf.Epsilon &&
+                     sb.transform.position.y <= switches[4].transform.position.y + Mathf.Epsilon)
+            {
+                CloseDoor(3);
+            }
         }
     }
 

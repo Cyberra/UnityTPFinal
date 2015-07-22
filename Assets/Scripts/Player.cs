@@ -83,7 +83,6 @@ public class Player : MonoBehaviour
 
         // Set the variables inside the Animator.
         myAnim.SetFloat("IdleSpacing", idleSpacingTime);
-        myAnim.SetFloat("RollReset", rollReset);
     }
 
     // Animations used for the player.
@@ -111,10 +110,17 @@ public class Player : MonoBehaviour
                 animChoice = 0;
             }
         }
-        else if (myBody.velocity.y < -0.1f && isJumping == true)
+        else if (isJumping == true && myBody.velocity.y < -0.1f)
         {
             // JumpFall
+            rollReset = 0;
             animChoice = 5;
+
+            // Can't roll infinitely if you jump at the exact same height of the jump power.
+            if (rollReset >= 0.8f)
+            {
+                animChoice = 0;
+            }
             // Update the landing variable so the player can fall infinitely until he touches the ground.
             isLanding = true;
         }

@@ -8,6 +8,10 @@ public class ApplyLoc : MonoBehaviour
     private Localizater loc;
     private Text text;
 
+    private const string startButton = "StartButton";
+    private const string quitButton = "QuitButton";
+    private const string replayButton = "ReplayButton";
+
 	void Start () 
     {
         // Get my localization gameobject on the scene.
@@ -19,13 +23,13 @@ public class ApplyLoc : MonoBehaviour
         switch(text.tag)
         {
             // Each case calls a function listed below.
-            case "StartButton":
+            case startButton:
                 StartButton("Start");
                 break;
-            case "QuitButton":
+            case quitButton:
                 QuitButton("Quit");
                 break;
-            case "ReplayButton":
+            case replayButton:
                 ReplayButton("Replay");
                 break;
             default:

@@ -23,8 +23,16 @@ public class StarBlock : MonoBehaviour
         {
             // Add a Star Block to the player's inventory.
             myPlayer.inventoryStarBlocks++;
-            // Event for Tiles.
-            Destroy(gameObject);
+            
+
+
+			Destroy(gameObject);
+
+			// Event for Tiles.
+			if (Destroyed != null && this != null)
+			{
+				Destroyed(this);
+			}
         }
     }
 
@@ -34,14 +42,5 @@ public class StarBlock : MonoBehaviour
         Ray mousePos = Camera.main.ScreenPointToRay(Input.mousePosition);
         DestroyBlock(mousePos);
         myPlayer.blockSource.PlayOneShot(myPlayer.block, myPlayer.SFXVolume);
-    }
-
-    void OnDestroy()
-    {
-        // Verify is has not been destroyed yet.
-        if (Destroyed != null && this != null)
-        {
-            Destroyed(this);
-        }
     }
 }
