@@ -219,7 +219,7 @@ public class Player : MonoBehaviour
 	void OnCollisionEnter2D(Collision2D coll) 
     {
 		// Jumping conditions
-		if (coll.gameObject.tag == "Ground" || coll.gameObject.tag == "StoneBridge") 
+        if (coll.gameObject.tag == "Ground" && coll.contacts[0].normal == Vector2.up || coll.gameObject.tag == "StoneBridge" && coll.contacts[0].normal == Vector2.up) 
         {
 			isJumping = false;
 		}
