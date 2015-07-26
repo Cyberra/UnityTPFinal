@@ -8,11 +8,25 @@ public class FollowCamera : MonoBehaviour
 
     // Choose to adjust the height of the camera following the player.
 	public float cameraHeight;
+
+    private float halfWidth;
+
+    void Awake()
+    {
+        halfWidth = Camera.main.orthographicSize * Screen.width / Screen.height;
+    }
 	
 	// Update is called once per frame
-	void FixedUpdate () 
+	void FixedUpdate ()
     {
-		UpdateCamera ();
+        if (transform.position.x < halfWidth)
+        {
+            transform.position = new Vector3(halfWidth, transform.position.y, transform.position.z);
+        }
+        else if (player.transform.position.x >= halfWidth)
+        {
+		    UpdateCamera ();
+        }
 	}
 
     // Using a lerp to smooth the camera movement around with the player so it doesn't look glitchy.
