@@ -25,48 +25,48 @@ public class Tile : MonoBehaviour
     private bool isStarblock = false;
 
     // Doors
-    private string door1 = "Tile20-9";
-    private string door2 = "Tile40-7";
-    private string door3 = "Tile78-5";
-    private string door4 = "Tile79-5";
+    private string door1 = "Tile20-10";
+    private string door2 = "Tile40-8";
+    private string door3 = "Tile78-6";
+    private string door4 = "Tile79-6";
     
     // StarBlocks
-    private string starblock1 = "Tile9-10";
-    private string starblock2 = "Tile24-16";
-    private string starblock3 = "Tile52-16";
-    private string starblock4 = "Tile72-16";
+    private string starblock1 = "Tile9-11";
+    private string starblock2 = "Tile24-17";
+    private string starblock3 = "Tile52-17";
+    private string starblock4 = "Tile72-17";
 
     //Platforms
-    private string platform1 = "Tile24-13";
-    private string platform2 = "Tile28-11";
-    private string platform3 = "Tile24-10";
-    private string platform4 = "Tile47-13";
-    private string platform5 = "Tile43-11";
-    private string platform6 = "Tile47-9";
-    private string platform7 = "Tile43-7";
+    private string platform1 = "Tile24-14";
+    private string platform2 = "Tile28-12";
+    private string platform3 = "Tile24-11";
+    private string platform4 = "Tile47-14";
+    private string platform5 = "Tile43-12";
+    private string platform6 = "Tile47-10";
+    private string platform7 = "Tile43-8";
 
     // Switches
-    private string switch1 = "Tile14-10";
-    private string switch2 = "Tile34-9";
-    private string switch3 = "Tile58-16";
-    private string switch4 = "Tile74-6";
-    private string switch5 = "Tile75-6";
+    private string switch1 = "Tile14-11";
+    private string switch2 = "Tile34-10";
+    private string switch3 = "Tile58-17";
+    private string switch4 = "Tile74-7";
+    private string switch5 = "Tile75-7";
 
     // Walls
-    private string wall1 = "Tile20-14";
-    private string wall2 = "Tile40-13";
-    private string wall3 = "Tile78-12";
-    private string wall4 = "Tile79-12";
+    private string wall1 = "Tile20-15";
+    private string wall2 = "Tile40-14";
+    private string wall3 = "Tile78-13";
+    private string wall4 = "Tile79-13";
 
     // Stone platforms
-    private string stonePlatform1 = "Tile55-13";
-    private string stonePlatform2 = "Tile72-13";
+    private string stonePlatform1 = "Tile55-14";
+    private string stonePlatform2 = "Tile72-14";
 
     // Bridge
-    private string stoneBridge = "Tile65-13";
+    private string stoneBridge = "Tile65-14";
 
     // EndDoor
-    private string endDoor = "Tile81-5";
+    private string endDoor = "Tile81-6";
 
     void Awake()
     {

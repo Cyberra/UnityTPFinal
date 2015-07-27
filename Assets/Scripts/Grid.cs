@@ -34,12 +34,18 @@ public class Grid : MonoBehaviour
         for (int i = 0; i < width; ++i)
         {
             // Change the x coordinate for the next tile.
-            distanceX += squareSize;
+            if (i != 0)
+            {
+                distanceX += squareSize;
+            }
             distanceY = 0;
             for (int j = 0; j < height; ++j)
             {
                 // Change the y coodinate for the next tile.
-                distanceY += squareSize;
+                if (j != 0)
+                {
+                    distanceY += squareSize;
+                }
                 // Instantiate the plane.
                 Tile gridPlane = (Tile)Instantiate(plane);
                 gridPlane.transform.position = new Vector3(gridPlane.transform.position.x + distanceX, gridPlane.transform.position.y + distanceY);
